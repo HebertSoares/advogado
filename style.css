@@ -1,0 +1,121 @@
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+    
+        
+}
+.caixa{
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Barra de navegação
+****************************/
+.navbar-light .navbar-nav .nav-link {
+    color: #514CA0;
+    font-family: "Open Sans";  
+    font-size: 15px;
+    font-weight: 600;  
+    letter-spacing: 1px;
+       
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #26225a
+    
+}
+nav.navbar{
+    padding: 15px 0px;
+    background-color: white;
+}
+
+.text{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*Rodapé
+-------------------------------*/
+footer {
+    background: #000;
+    padding: 50px 0 20px 0;
+    position: relative;
+
+}
+footer h4{
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    float: right;
+    margin: 0 5px;
+}
+footer p a {
+    margin: 5px 15px;
+}
+
+form{
+
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    
+    iframe{
+        width: 250px;
+        height: auto;        
+    }
+    form{
+        width: 100%;
+    }
+   
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 13px;
+    }
+    
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 13px;
+    }
+    iframe{
+        width: 450px;
+        height: 315px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    iframe{
+        width: 450px;
+        height: 315px;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }

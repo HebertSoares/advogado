@@ -1,53 +1,96 @@
-html, body{
+html, body{     
+    margin: 0; 
+    font: 16px "Lato", sans-serif;
     height: 100%;
-    overflow-x: hidden;
-    
-        
+    overflow-x: hidden;    
 }
-.caixa{
-    padding: 60px 0;
-    border-bottom: 1px solid #e5e5e5;
+body{
+    background-color: #514CA0;
 }
 
 /* Barra de navegação
 ****************************/
-.navbar-light .navbar-nav .nav-link {
-    color: #514CA0;
-    font-family: "Open Sans";  
+nav.navbar-transparente{
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.navbar-light .navbar-nav .nav-link {    
+    padding: 20px;
+    color: #fff;     
     font-size: 15px;
     font-weight: 600;  
-    letter-spacing: 1px;
-       
+    letter-spacing: 1px;       
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #26225a
+    color: #3a918c
     
 }
-nav.navbar{
-    padding: 15px 0px;
-    background-color: white;
+nav.navbar{        
+    padding: 15px 0px;       
+}
+.btn-custom{
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    background-color: #514CA0;
+}
+.btn-custom a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111;
+}
+/**************************
+parallax */
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    position: relative;
+    height: 100%;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
 }
 
-.text{
-    background-color: rgba(0, 0, 0, 0.5);
+.caixa1 {
+    background-image: url(img/pexels-mentatdgt-1220757.jpg);
+}
+.caixa2 {
+    background-color: #fff;
+}
+.caixa3{
+   background-image: url(img/imagem3.jpg);
 }
 
 
+.conteudo-titulo {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo-titulo span.titulo {
+    color: #fff;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
 /*Rodapé
 -------------------------------*/
 footer {
-    background: #000;
+    background: #3a918c;
     padding: 50px 0 20px 0;
     position: relative;
 
 }
 footer h4{
-    color: #919496;
+    color: #111;
     font-size: 0.8em;
     text-transform: uppercase;
 }
 footer .navbar-nav a{
-    color: white;
+    color: #11101d;
     font-size: 0.8em;
 }
 footer .navbar-nav a:hover{
@@ -74,10 +117,15 @@ form{
     margin-bottom: 50px;
 }
 
-
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-    
+    #logo img{
+        width: 160px;
+        
+    }
+    .navbar-light .navbar-nav .nav-link{
+        padding: 5px;
+    }
     iframe{
         width: 250px;
         height: auto;        
@@ -90,8 +138,11 @@ form{
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    #logo img{
+        width: 160px;        
+    }
     .navbar-light .navbar-nav .nav-link{
-        font-size: 13px;
+        padding: 5px;
     }
     
  }
@@ -99,7 +150,7 @@ form{
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .navbar-light .navbar-nav .nav-link{
-        font-size: 13px;
+        padding: 5px;
     }
     iframe{
         width: 450px;

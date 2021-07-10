@@ -8,7 +8,7 @@ body{
     background-color: #514CA0;
 }
 
-/* Barra de navegação
+/* Barra de navegação principal
 ****************************/
 nav.navbar-transparente{
     padding: 15px 0px;
@@ -38,8 +38,26 @@ nav.navbar{
     text-transform: uppercase;
     color: #111;
 }
+/* Barra de navegação pag2
+****************************/
+
+#nav-secundaria .navbar-nav a{
+    font: "Lato", sans-serif ;
+    color: #111;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+#nav-secundaria .navbar-nav a:hover{
+    color: #514CA0;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    text-decoration: underline;
+}
 /**************************
 parallax */
+.caixa2 h3{
+    text-align: center;
+}
 .caixa1, .caixa2, .caixa3, .caixa4 {
     position: relative;
     height: 100%;    
@@ -50,16 +68,16 @@ parallax */
 }
 
 .caixa1 {
-    background-image: url(img/pexels-mentatdgt-1220757.jpg);
+    background-image: url(img/imagem1.jpg);
 }
 .caixa2 {
     background-color: #fff;
+    background-image: url(img/fundocity.jpg);
+    
 }
 .caixa3{
-   background-image: url(img/imagem3.jpg);
+   background-color: #fff;
 }
-
-
 .conteudo-titulo {
     position: absolute;
     left: 0;
@@ -67,7 +85,6 @@ parallax */
     width: 100%;
     text-align: center;
 }
-
 .conteudo-titulo span.titulo {
     color: #fff;
     background-color: #111;
@@ -109,13 +126,6 @@ footer p a {
     margin: 5px 15px;
 }
 
-form{
-
-    width: 50%;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
@@ -126,13 +136,7 @@ form{
     .navbar-light .navbar-nav .nav-link{
         padding: 5px;
     }
-    iframe{
-        width: 250px;
-        height: auto;        
-    }
-    form{
-        width: 100%;
-    }
+    
    
  }
 
@@ -145,6 +149,7 @@ form{
         padding: 5px;
     }
     
+    
  }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -152,18 +157,12 @@ form{
     .navbar-light .navbar-nav .nav-link{
         padding: 5px;
     }
-    iframe{
-        width: 450px;
-        height: 315px;
-    }
+   
  }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    iframe{
-        width: 450px;
-        height: 315px;
-    }
+   
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/

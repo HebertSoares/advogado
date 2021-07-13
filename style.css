@@ -4,16 +4,32 @@ html, body{
     height: 100%;
     overflow-x: hidden;    
 }
-body{
-    background-color: #514CA0;
+#escritorio, #atuacao{
+    background-image: url(img/bg.png);
+}
+.artigo{
+    background-color: #fff;
+}
+#escritorio p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+#escritorio h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5;
+}
+#contato{
+    background-image: url(img/contatoimg.png);
+}
+.wpp a{
+    color: #fff;
 }
 
 /* Barra de navegação principal
 ****************************/
-nav.navbar-transparente{
-    padding: 15px 0px;
-    background: rgba(0, 0, 0, 0.6);
-}
+.navbar-custom{
+    background-color: #3a918c;
+} 
 .navbar-light .navbar-nav .nav-link {    
     padding: 20px;
     color: #fff;     
@@ -22,7 +38,7 @@ nav.navbar-transparente{
     letter-spacing: 1px;       
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #3a918c
+    color: #514CA0
     
 }
 nav.navbar{        
@@ -31,7 +47,7 @@ nav.navbar{
 .btn-custom{
     letter-spacing: 1px;
     font-size: 1.5em;
-    background-color: #514CA0;
+    background-color: #3a918c;
 }
 .btn-custom a{
     text-decoration: none;
@@ -53,6 +69,7 @@ nav.navbar{
     font-size: 0.8em;
     text-decoration: underline;
 }
+
 /**************************
 parallax */
 .caixa2 h3{
@@ -66,10 +83,12 @@ parallax */
     background-position: center;
     background-attachment: fixed; 
 }
-
-.caixa1 {
-    background-image: url(img/imagem1.jpg);
+.caixa1{    
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/bg3.jpg);   
+    font-size: 21px;
+    color: #fff;
 }
+
 .caixa2 {
     background-color: #fff;
     background-image: url(img/fundocity.jpg);
@@ -82,8 +101,25 @@ parallax */
     position: absolute;
     left: 0;
     top: 45%;
-    width: 100%;
-    text-align: center;
+    width: 100%;    
+}
+#conteudo1{    
+    margin: auto;
+    text-align: center;   
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    word-wrap: break-word;
+    font-weight: 700;
+    box-sizing: border-box;   
+}
+
+#conteudo, h1{
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
 }
 .conteudo-titulo span.titulo {
     color: #fff;
@@ -129,14 +165,18 @@ footer p a {
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+    .display-3{
+        font-size: 2em;
+    }
+    .btn-custom{
+        font-size: 1em;
+    }
     #logo img{
-        width: 160px;
-        
+        width: 160px;        
     }
     .navbar-light .navbar-nav .nav-link{
         padding: 5px;
-    }
-    
+    }   
    
  }
 
@@ -147,7 +187,7 @@ footer p a {
     }
     .navbar-light .navbar-nav .nav-link{
         padding: 5px;
-    }
+    }   
     
     
  }
@@ -156,8 +196,7 @@ footer p a {
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .navbar-light .navbar-nav .nav-link{
         padding: 5px;
-    }
-   
+    }   
  }
 
 /* Large devices (desktops, 992px and up)*/

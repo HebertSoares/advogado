@@ -178,16 +178,17 @@ parallax */
 }
 /*Rodapé
 -------------------------------*/
+
 footer {
     background: #3a918c;
     padding: 50px 0 20px 0;
     position: relative;
 
 }
-footer h4{
+footer h3{
     color: #111;
-    font-size: 0.8em;
-    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;    
 }
 footer .navbar-nav a{
     color: #11101d;
